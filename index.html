@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <title>Home · Aditya Bhardwaj</title>
+  <title>iOS</title>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
@@ -21,7 +21,7 @@
   <link rel="manifest" href="website/favicon_io/site.webmanifest">
   
 
-  <style id="study-style" media="not all">
+  <style>
 
     /* =========================================================
        RESET
@@ -682,189 +682,10 @@
     }
 
   </style>
-<style id="portfolio-style">
-:root {
-  color-scheme: light;
-  --hub-blue: #006fe8;
-  --hub-ink: #101114;
-  --hub-muted: #555962;
-  --hub-group: #f1f2f6;
-}
-body {
-  margin: 0;
-  background: #fff;
-  color: var(--hub-ink);
-  font: 17px/1.42 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-}
-.hub { max-width: 680px; margin-inline: auto; padding: clamp(34px, 7vw, 70px) 0 110px; padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
-.hub, .hub * { box-sizing: border-box; }
-.hub main { margin-inline: clamp(16px, 4.7vw, 34px); }
-.hub h1, .hub h2, .hub p { margin: 0; }
-.hub h1 { font-size: clamp(43px, 8.8vw, 64px); letter-spacing: -.055em; line-height: 1.05; margin-bottom: clamp(25px, 6vw, 44px); }
-.hub h2 { font-size: clamp(23px, 4.65vw, 34px); letter-spacing: -.035em; line-height: 1.14; margin-bottom: 14px; }
-.hub a { color: inherit; text-decoration: none; }
-.hub a:focus-visible { outline: 3px solid var(--hub-blue); outline-offset: -3px; }
-.hub svg { display: block; width: 1em; height: 1em; }
-.hub-profile { display: grid; grid-template-columns: minmax(0, 33%) minmax(0, 1fr); align-items: start; gap: clamp(14px, 4vw, 28px); }
-.hub-photo { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 18%; background: var(--hub-group); }
-.hub-profile h2 { margin: 0 0 4px; }
-.hub-profile .hub-location { display: flex; align-items: center; gap: 5px; color: var(--hub-muted); font-size: .92em; margin-bottom: 9px; }
-.hub-location svg { flex: none; }
-.hub-quote { display: inline-block; background: #f3efed; border-radius: 16px; padding: 6px 10px; font-size: .81em; margin-top: 9px; }
-.hub p.hub-bio { margin: 19px 0 24px; }
-.hub .hub-resume { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 15px; background: var(--hub-blue); color: #fff; font-weight: 650; }
-.hub section { margin-top: clamp(28px, 6vw, 42px); }
-.hub-group { background: var(--hub-group); border-radius: 18px; overflow: hidden; }
-.hub-row { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: clamp(12px, 3vw, 20px); align-items: center; min-height: 56px; padding: 13px 15px; }
-.hub-row + .hub-row::before { content: ""; position: absolute; top: 0; inset-inline: 15px; border-top: 1px solid #d9dbe2; }
-.hub-row strong { display: block; font-size: clamp(17px, 4.1vw, 24px); line-height: 1.18; }
-.hub-icon { display: grid; place-items: center; width: clamp(40px, 10vw, 57px); aspect-ratio: 1; border-radius: 26%; font-size: 25px; }
-.hub-icon.pale { color: var(--hub-blue); background: #dceaff; }
-.hub-icon.green, .hub-icon.blue { color: white; width: clamp(52px, 15vw, 86px); font-size: clamp(26px, 7vw, 45px); }
-.hub-icon.green { background: #135340; }
-.hub-icon.blue { background: #006be2; }
-.hub-description { display: block; margin-top: 3px; }
-.hub-row small { display: block; color: var(--hub-muted); margin-top: 4px; }
-.hub-chevron { color: #767a84; font-size: 17px; }
-.hub-tabs { position: fixed; z-index: 1; bottom: max(12px, env(safe-area-inset-bottom)); inset-inline: 0; width: min(calc(100% - 32px), 540px); margin-inline: auto; display: grid; grid-template-columns: repeat(4, 1fr); padding: 4px; border: 1px solid #fff; border-radius: 999px; background: rgba(250,250,252,.91); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: 0 7px 28px #18294429, inset 0 0 0 1px #d6dae24d; }
-.hub-tabs a { display: grid; justify-items: center; align-content: center; gap: 3px; min-height: 55px; border-radius: inherit; font-weight: 550; font-size: .77rem; }
-.hub-tabs svg { font-size: 23px; }
-.hub-tabs a[aria-current="page"] { color: #005ac4; background: #e6ebf4; font-weight: 700; }
-@media (hover: hover) {
-  .hub-row:hover, .hub-tabs a:not([aria-current]):hover { background: #e6e8ef; }
-  .hub .hub-resume:hover { background: #005dc4; }
-}
-</style>
-<script>
-  if (new URLSearchParams(location.search).get('view') === 'study') {
-    document.documentElement.classList.add('study-mode');
-    document.querySelector('#study-style').media = 'all';
-    document.querySelector('#portfolio-style').media = 'not all';
-    document.title = 'Study Material · Aditya Bhardwaj';
-  }
-</script>
-<style>
-  [hidden], .study-mode #portfolio-hub, html:not(.study-mode) #study-library { display: none !important; }
-</style>
 </head>
 
 
 <body>
-<div class="hub" id="portfolio-hub">
-  <main>
-    <div id="home" data-hub-view>
-      <h1 tabindex="-1">Home</h1>
-      <div class="hub-profile">
-        <img class="hub-photo" src="data:image/webp;base64,UklGRrAbAABXRUJQVlA4IKQbAACQhACdASrfAOYAPmUqkkUkIqGXmn5kQAZEoDsBxVxPqR5Z+PZu/X3r0Ls/Pst/8r1kf2D/bdG962fNh+5fqyfl374f7n6QHpg+sx6MXTEf3C2DOWuNzo/+kTNTkv5z+eY82BBAWiVuJVWj5xsMhIW5qTvV/v4nP4t88aQUyvhUyIFmy1N5nyJzYYpq7TDWkZwZSnE9Zu2lkr/ZQdDss7tg5vsNi2Tz4xMVl+o//3URVodyJB/cPMcV6g3h0+3krMcMbmJv2S2LDf6+PiY5NrRY/j/wOTkM6TkxJZ0M2IIZtSb+KIX43YHzNQyhTsHizp0PfsE7Ir9eiyl01nBxNzFmdCyQqIIc6q9Ti3+yuOuFdLNYQH5BEyxZFODU8Wf4ygtvIHx0j4mu9XOnqDiAUI9KPCGgJfvK+796T4fZvpfq+XwwNgywB1unVZnOVvQ/yr4MdPRQjwu6wBWavYln7SF7odtnIO6xCiHuZ3tuJFwKwt/D2/6Wodt7jhCZRk8fRC/Na8FPjkm3qlff1xl66eqHjS1vaQ/GwpIhyRymWGIoRAPI+vKfh1jI/zTFhQpf0Oh73rxz+5jaum5hEvWF1ASZwd5LoyyUaPJUiDE3w5FziLZsFb9e3PC1xgxOeIN+JgZDgglQz26xW726TgnYKh/YaY4jSPRL6MeT2odzXGzdnkaAI+lC8a/NoXWlXfkcblgeGEvE7IF3aTFtOzXbi9qdb/haUPRnqKnRspuBWH1oEwk66KmTd6sbcm5SHMrjMm20GM+TAtC7jklbjnjfTl8I9COyTahqC8oVK9Os5JOyoxcRyW1MHNnOCMsB1PEYnFfyavX0aSa6L/1l7RkNSCJuBDbLfYVSnnotDuKkIz4SO+lseRbu6ZDX0TGDWma0QDcuVbbg87CX/N0aLZSQ/59mVhJaB5DkHrId1BOm70ZDBC9qg2dp+ndBnaNzR+eQJ71vM5JC7hv62aKF99yXR8tgbzu2GGzQ+B510j/Zs9qy43v0upnprMD4T00pV+lBDEqo1+OJ1ZgydovFedyHb1s5O9RGh/IIhqF3qbXSFcn06UgAige+x9PCvIbkkADFxeWmKdJYWQvPH3P2iNjJn+SaF1lnx4Fvx7URv3HbQAPQ4HdDyT9KezYFHzje/CV13TsXENAgFQ9WBXxeIU5W4pvf5mxN1oQ6fwV7jMPDMIHQ6C8oBgm+wH5RleMcpVLyUaxgnha7yyuwOd985ef4Gwln6Z2XToO1xCWUk96wG2l/NPQGReaksALTORtl7RmBUHjIJAVWtf2PTlNeThsMSdDi657xjNs0V/QHlFTiQl5lYKj0wvtlvREuiiR9dxivbDpf8a57cg/y4t3yeUjs2JYX0QEbatVyq9KPQd4J1P5YIFAXcw+egqrj5WhEjmIsAb5y6p6C/YD7b78SRIgAAP7+/0RQruvp8ZQUq06d5ts/IVTOGfSaw/xoGjBXe30JD9Qroru+NY/xBVDDnnQ3dIbJkwQIz0/GpBw2r3cg9pLB3TRX1KFn74bfvRwUjLoN0Q2l8FpFzHDRPTzjfB//zGDAzaNoCV2ywwLeMzmE3Un1AwqMFD1vMGd6zumxgeX6vUmXb1T/77zR2lAmBl2xuvSzUP1em2oC+sygtlIcPNNza9YemnKH7EOl5GSdQSRnZQ+bRGwNz0d20fgQ7W3bdRu3OStzQ/xCfjX2VG+nTQflmzAuepSsnK6rC0HLTiDUjlCzm7GJnIOfK/8IsbBgPGf9FHPUNrOQu0rDphSPA5wuxnOstCIsCN/rgVXPHHAsc/OeJs17w89Iy1p4bRnb8oXpRMz4duh8VG52Tgwou32rKnAlsfEy86ay3/k8NWqAOSfpGQqZpJPCygonCcnvJB3xqnuJFZdzdrF4Hva3B/uON9zUrVlRxP6mOYfja8SfL3gROeDloHAeRF5O0vOmG5K6EgInrJBteIvnljxjdhH3uAUwrhgaNzQ0/+4RU34j066JEDoj08zMBlqCD+lzD69O1v3ne/W7uDumUYwkal+U6V6c0k4fTmVz7LjzmqZ6gLVTem+pixcHis1YnsvUzW56OcJ4rcbNZOiM6BPihfDnuB37yeovC/sfgl11un3J7644B+BKu1eog2BpTpd6dnA2fhQHLtBbnQwmIQ9EeZunrw6GHA9b/F0U2k5d+NrF67VOJ4o4H3tLc9WDaTH4CCIUwjq4uDCc1zysITH9y3VMdC7+lEY96plbmzaj73bK4DpPhbRwZRZw9rVdlLAokDTlyYXYETvhDx8tRuUGwxz3GN/c/RrYKiPMvF0C2fnQkoui/3VeBXZHPJwpb/77lDvMt1F8h5DMsTLqNw70dW5yTOrcYmNoD1gaT06Fq5qpd8e5ll+ZU6b57RGCncuXhUKzIoabNf5aNIFe+LFKqEY/jcTbT4DOAFYGf8fWc8mBB0cqbVwAA8bvLVUiYVUoNxXg6S++AlJabBvKGYgl4D14r9tg+Bxvr0H+vL/jLqmNsZxa3/q8VTE25isJgVWdNMRfgZPKsyitXNB8lXUi/pNtgLW6fWaOKEA309IuumSwPZ/vhPVzFscGloihTKrUtJbztqfIxRSu3PnLiDBnIZ1iXcbfkUUaszenY3750CDdaQLLNXKKatCZNUV+FRwiSpHm1OcMEYMXuKTMQP4TPcv9Wenn99UQufsUdp/tYjTLjpmvEiuJFQBWdoI+1TgxTGyuJ/tLFBonEsXOqJcgPv93jFk3YW9gWRQ3E7I1ep11ftBiMY87C94FcvZiX1k958kynLynnSHVxnkpEtcRWeiWXjPzB8DSuYB9vUQjjgWxkt2df5uHrKt1GyQvSUyH7zezfjxTxc9AOoRHrlqEuQO1/RKzodNMe+M0bkMTfE/pBDLLauTopliCXe/SWRWN2ncIGdwAvgYbmWBgkIJ0qMBVvw56fqxujU0gOHysNfqAg6JsGGMc4in1mxcvu8k4prHAS06uMOjbTMkZqjDyKEnTXJzRYozx2QEPz1qEFqly5W4Rok6e1xZDv4M0k7ECyrxoTNA6on9C0tlse2kUxnMqyboHKV7UCVWFY+e34kYYhq+Iyu41QkIi7/EJqXrtknLSRgQLYkgFdgFKnRYousmh3oYrnyRvtosOsSYGU2cY85IwM3CMSSXSFkOaklkx2o7xhzOf1wibP9PyZYfv8A7f2BV4kGmLtCICL715UeA2rHv5z7wekrd4elDYF1vW6aDFjyoIX5Yq3JZImkbVuA5lVuKD8XE/1SPQ5OuG77SBBCFXxKVsIVVVK6KG1iny6Z32cyEh50nyQOFhzlJHlIdAGFmUDZYlKzuXn/aXXa/8eF4pWhpWHZ5eEaxWs5IbQZuoIelzMDB9CrbSKG9gcNlJSBc2so1ZbFJ7zZGEZG0CGXg0qMlr+waODezxqAFu8aR43zrbUmk+AL9NZtD3aZtLJIg3WfCC+es+WPIe5I99hq07dHe8/SUMXpXj9HSHjguyc/htmGJw2ZFcsVMAf5I7jXv16Por4zm4H03C1mbZM1Q4dcVhRNZ53BHPeqoYzNsfSWEeAL4cfsOzV1tWIebWyHwzRivzs/dyaLEkjUPt1FFm/VprB30MVzqoS42wN7iQ4Maay56DnkRvTyIFqveN9Nw4uL4vS9n4pbjHLdiRboHsbr+5tCdJjJnblx5oSXwRzVFz05vl9TFaufOFRk15jEPqZeWuqY+Urr1mcemTKGX8jKoOZj/0eeRY9F1b7ncNXNqyUfUbxjFqLHSW1WfDN4F+22+nSdO2chDskkRwh7BtSRxTcCPNOmiqwJxF0HmA1Sty0nN2yX3FmHv4fXg13b9Qo4aVQZAg0iOwYCeAGhu5UVXxS32sfIXB8arqebrlbqGLDdSqRvRf0Vi5WFSD4+YoALU4TEOUWtM92hGBOe0oHobQ1QvqQEpBILgbRHerMBMZZMYvf6NkOIbbKRwZ++Au9EWzt14zPv95Fj37ur6i8UvlRiB1Yjo7UzVJ43XaFB0s08RitaUd+qJY0cuevVUMzfAsmJ0u6wu4PmlWSWrCiGHT2cUjThCkWRnmJ8LJxrE2ZdDEOxq2uBNWfCdAsbqdOQ9hKZzyRlGITqZtwVeavx+pj7O/jn1OfbtZj0GOox7JwkUeGgx59THwF0SbKyJPm6J84vA7YrdiRWwoQDDoikF0pTK7L5lWfPkW2eQtSqkK8rD0MbPg6447vksulcd/rBiP4dQG2W1qU3eipC/O0dEZjUEVfuJfH0qcppJvacH5dK7eAYtoxt2GLqWlPl6Of50b3AgD3h73JHSh2T8CXa9ux3z8vuPD65pq6lKsmQNPr1Q7el79hkT4PEXkYPF6epwIHW5s5wMDTh+VbCruBt1TKT5w0qGTTFWixd9qgvWlYxLcVO5IB0QqO2ocueIDGxj8TlHb1EssdtCe1UMVQziar9xE9P2YZwSiguA9Lv1oYAZtRUWwTXq4ump+ppvFEwrgz2wcVMdRHQ/ysYMa5UtXGip9mdmc9TXt9b/yS93GkUy97w/7Jy9kAc/Evu8it++gI3fDKE3bYZbgRtiwD9ACiU2U0xMAyeylbrCJRnlWaDLl+mqjr8DRmzAwN50PT1wVjHIhQaHc4EV8Ow5vIrkGBXdEpmYRBJVz98gxk9mQhUtATezuG1MPthgY17YE6AhzpNCEdiodPowYAK46t8QCMgQgTeIL13XtQC3rEYdCFN62UxrhK6sOmHjpYua/Y6Jy6agBzIu8F4PaOYUwzkw0ynLdpKRUjc6rzFubdogVkskfimZ5/X20n3octU7Dd1N7KHn9oPHktmxuWr/Gn7vWBUcOqjR4m46OlIRGkMsweX/rTTvPY17pyLPYSFIildh3ZhPBJre68YFgFM9LZF0n/V0f2J71Nz+gnulog75gdmIdt42oCzeCCLVabFCkH2zfV7kio8ARU3bJNxh3xRbmY6mlXkHcfXbRqn9Dy+k4b7ndOr5wuXagR8Bcj0pfjTy+4RKA3WOwKC/V26MdlA83J+9CXneEp+EAdJM2TTtIeTtVw30Fr4Law1NpxV2qXjSX479osSpo2pLrBDJiYnujUJ11bvcU5G2lieS7uoxnKAfLfXp9tw4oSic9D2UovGN/ERLELt/NchWQksO//dZsugqN2VuWdYUeUlyqKQ5jg5HtqQ2aqOKoBoN3IuZbikIb+bzH7afI1lFOVj4ledCw+kFibjfsrx7VE6KiEG9EA97eMSCg86xNPiyM7cx9qur1hFqUAmTBqpk579UTkbBQe0W/4C2plhVkFXlZNrLholUDbmY9Q+HlYunWULas5gyZen7KMaKBW8i21QzNyhn/L8/d0Zma/0+hqRg/08/XNb1twncYk6d/9goK0FWrgGw7ayLgh2o558cqrfZOEL1kZBWV1OtIj/8h/Cn1u16DuzxhykKXoqB0xirGrOTWGwH2zDGfdQUXn6WUIppax9jQku0Pc1bgUwJatLGiX2WvHgKmDh5mYtbWoW35bsOeOkZsNXcZOP1pEvcuOl50j0UUbE4QYgcXvBmthx5exerSyRlGx4TnNqjxiElhOCcFsJn/d5LN/19dBXc7uNt9iHkgfNgXlFI3rl8//cbyMEu/K7MufWAU90vgvS8nqLQIeoVp4wy4IHHpbZMPomuuswBDidSJHu+yJJhMb6W/6AadSib1oAJwb5kKiM0dTj99xU3AChxg+I1Mn7iDohJfNTg8UEcEgZ4tFBUTk7js/MsMgK1qxMzlcOOgujFXUwmnz7JOF1B++3/xBZn7Yqq8cvIscp3H+a+1y4unlUYqIwdmCsrU9awE5iyNTElLlg4Qg7NGHwTCpPVFpYWQhWst1ktaz83qGlGPVjGegEoiTLUrA1FdFGu17suoW7JF4lZTsR0KRAUp7DpemB4Qjjtp/gzdtI6jcI/OOzrTa/szLPDvetIOjJSssrEqWxdQM2LCVD/Y70WR1Ti5iaTLzaL1Id3nABrs5VQ6WpbwzyFwohtwsPGrk4WGl7HzGlTRgGHFsCW1qXL+YmhQ1SAgLMxrAM3hPnKvBQbhrEgddwbi7TCxCwW94oQV7T4DM5fc0k3RL5hIuertpf3vepAsSgvojzNAcuAT9DuYRFSQyauDP+1swIMefgZGHiTMM7I9ziCDz/NtN0L4VN5M38fGI8RSGUvT3/+60u/6vHNEcxSUZWA0BfQFCxI1zDvZ2AKooViIO9WLEXd+fGOzJUZXwOOZeuBNE/4a0XBwLHgDON2kYkYd2QuoAoP5sG4B4K+ilqybEucVfbIylFNRktKMLpSXlrGG3KCqoFXHBv+QOrBB/QocN3wg/HpV4p2aNkUR4jKCMDtaSiJ4rSNL0oS9YCUH2YLmP8O+d89H5eBcnR4xgok1vcoJcSi5a4Sjxg0onWUI/YXG6sVA3aFNuwAH6bbi7rxqsqCCH7PJnfdH1cgTB4MZUnPBo7EmO17qZdijeWlaXc3eAM/+BTPSV4R7sIyfwUpC0QvKKyQhgHsOs2Xi/vFHfZOaJ1+yRVg4j7rdKB1ZEhJK/RPTot3a46XASq6mlSXrVTIOnKLftR1CKo6jbf7n+UtgkQ8Dkr0HtT14tL9BLliTdxmT82FvBRoFMbBDwv7L97ci3PrRhoZq+8aRBOeNONKGecIR3X+2Gr9mR/ujHo7xZGZYN806kTLGCqysvwccX+uF4JCYVt6uoxhcw+62rN1nQ248ccGaMu/Hz5rL0WPbkONWmrO992FRvPBeHmSlkML4AOGCK+ucCpJMRtU+9ntAJH9HlW5VUkXo9RiCBZ8LIpq84CTw8gMbq3HJYVFOCGYNHy7zG68cbAAbPr28s3nbqhZ1VdrSIKU8/Ji32bzsgH61/5ZhdUGetpDdI/GPcDkOHQxQTrRxB9C/L4aCVYLkjEJCtmJ/6RMcucFpjI+O9C6lO1udA+3DZfKHSQCNjU/WubUH1m+c682OnjPGSjSRAQpKRbiqUfltFFbZHqMaI2wjjkwP5IPbSv3WTAZzJluzKPC8ZcYnr6z/zS5T6ZoRcwpuZErq59WewvzU9jOMZprKo5N2ceov+iw716FUZwmQyTnDz4Me35VestbrhTV5XzjVA6N7OTgoakEDwk88VJm8mM07N3t7zQa6oxFteE+hzRuCBZgDLSqWW7gSHnZyiNuzprjQsm/eP3GT5ho9jbxlMt2p2unrdQ7CceL9QEH6GDvIZQr4aXDUmG4z7dAa5Q9mycLJcWL3h8paRDm5q4jZqS+jqjsIhlEchvkqRHic3p5n4NbuSAP1xp/I7IwzwX4SLseKi2IUFwgNoUh5KmRwiUFNUEiTCTjfo9wwJEeFhwkAUUDhEEBmsbUuRuRIItBRnrZ8A2fiaxTLGxxVHQfR0E2ra0vNn2De9XGYz1yfzoBOfKPog6a6x+gCDszGr1KyOwPjuu14QEaEYwyx7GERGRaevyW3bVEYG3vWAryS6slCWlHKLJ+VGo8e56mJlqAURqTqFAOYWBRso/x+haTEvVkcVaByB9YRZjNTbxi1xre7x4+4s6S9UY7Agch2xCVIfnuIIzE6keD3/H62k5Gn/bl4TJfFVkrSFWp625QblOIR4KfSwiI+8xcEW6mglm2xQ2/kDY66tbn+SgJTC+W4UXzm9h7EmGiNzmlFLevlvkzf15XU9ZvF8rNDsn78WZoacqNB39jUBwPqBZcUCD26X8d7aGNUKnnufjRJPDAv9/xppoGzV7QgrAJGR+WfXI1Si3UuCuk4CNtmuFRoYGjwxt9PbDbRkcVQPhyYbWq5i5Orhk0TE0NsTa+UP9Sh8sF2q2kJIckdobQLgKcgp0GnOzvdhhEtVpL7S9CXdh9FyEwvFwv7yzPvIm2VXNOBNgBywapDKc68eJpNUVn0TNjokTXhZPc/LG+/FZR75od05AxF9LEjG8U1HJkhJcH0m8nMjUUtHetopbprfmCfnAnhtaVihTP+8iBr3wseSLE50VOqAMJ2hgIBpLSaje4iabQrLKWxt6AOZpz2QTNcFsuPSuL9Jkr1gpn04oBlRdoDL/hFp6/iu3QhXVZ4EB92zDdn8y5Yz8BzwyfLt966Ckxx3FOiBI82pwc1aKyRUqDQ8IjwIX6qv0OqYOp+nOffTxirAb2pGe0NM49bn+wPNGWVes6XvXTGrsSscVyK0TZ1JF2IyfqdnxWRI2Q/1p0GC+jtq0t92a5Q9NiTLa2t2rw7o272LpL2UxVH7dcbi2AKsYZVKE4faymY5aKFedAdlXfZAllNewlG3KihNbKt66yEZNeHpMf5ohaBrO3LmdpLxPECBcBZVDLjxoKVTtscDUlzpJHBI2t6TwbZUj+eYtHWFsGfK3r08MsRd/8BmUBwhW3uxV9GDgOWiuduK1naly/tql3uRT851/F3dhpK+qxoVL8AWTEU89/2jyRj/2x7Vf38takDgm4J51blvjIDA75FkG1uNaucY29eyLeQHrRrcvBHFUaccbo8IjP7FioCZ2/YcM7/u9atHXNolpZvuOBgTGYHB0e3bGMgEbxuLskGTter0y49t+1s9bOf9DSBAcl+SWm+aXW+HKP7CC8IUFTh6aSHkBoJnI1NfghXdWhCR3lrTo4nmaAg41g6ba8cASpXTBfs0jjtDZXOTaGJPIeZG5Em5QbJKjtbojoCtR6gvw5sM1dB2zjIOi/FHIa3MDsQQIKIYpJqAb5P6EqvAX49bMNJ9/MbxxctAbB0XSsEcDHCDx93oXjYDKJtmHdhv2IFeNuAwa/GxflBSnyO4MNB+nFt2CfoEP0VVW1gs/xyWU0kBEFPj8KEgvEdxwM5Vd5gduspXbnzjx2IhqGi2QAhYZ708KFQavMyuSDbmG2YDxsCwgC6FkQ3R3/aD/9SCQluTzFDvFFxFUVv8ykfbH9LESGdbSIKHhah7NEQOXbtkvrPTRmQVktsptZTmSUULIejEFjLVAUwRTF0AaD0aZeWTHA+4ir41MeQRp9ZNnvDdN2UWk58e8rz65YvmT/ireKf1tbMtkiFxjp6MVwcEBoiIMS00Jz+bOqcNcaOAwK4yrNnlodjFLMURH02PwHz9Sx2GlkoxPr9pTNCq7TmdTpWwfZMjVsbYa+NIVq0z4XvXqk78BR0GY5X71CO01TRrKNnfRi37dKCnZT1tuIvIshAaQhrq7ZhUUg8fUO0WkICSonQ4jYzG5+Zf3bW83QI1IrcU/PBY+ZSfL9ExpHK8YM+qzegAS7Y7dXu4TGltt7dR4ywGmqlLwfLElZ+OkqDaBBXMCCqsDpCfLun+0hTP4zHZO+3yOv3IXPm3FOFYCxL+6bG9F7sbSAsZClKh4og/BluAfnMKS+XMmYkPWMRSH2Ai9XRGJ4nziToETnjxtuEo6CF26SZstpuRleQJAgjb6vifGj756DFEfyI23Qd2NSGow6H15zQwb//XHFQeL1JRNbzNb1PngOZ6u3+QA+dNl57Melxl8BDCAAAAA==" alt="Aditya Bhardwaj wearing sunglasses" width="223" height="230">
-        <div>
-          <h2>Aditya Bhardwaj</h2>
-          <p class="hub-location"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7m0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5"/></svg> Dehradun, India</p>
-          <p>Computer science student and iOS development trainee.</p>
-          <span class="hub-quote">Code so bright, I gotta wear shades 😎</span>
-        </div>
-      </div>
-      <p class="hub-bio">I build software around practical problems, from finding a game nearby to making exam papers easier to access. I also build small experiments to understand how computer vision and backend systems work.</p>
-      <a class="hub-resume" href="https://adityaweb.xyz/Aditya-Bhardwaj-Resume%20(1).pdf"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zm0 0v7h7M8 13h8m-8 4h8"/></svg> Download Resume</a>
-      <section aria-labelledby="study-heading">
-        <h2 id="study-heading">Want Study Material?</h2>
-        <div class="hub-group"><a class="hub-row" href="?view=study">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 5c3-2 7-2 9 0v15c-2-2-6-2-9-1zm20 0c-3-2-7-2-9 0v15c2-2 6-2 9-1z"/></svg></span>
-  <span><strong>Study Material</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a></div>
-      </section>
-      <section aria-labelledby="work-heading">
-        <h2 id="work-heading">Recent Work</h2>
-        <div class="hub-group"><a class="hub-row" href="https://adityaweb.xyz/projects.html#case-Khelo">
-  <span class="hub-icon green"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h5m-2.5-2.5v5m7-3.5h.01m3 2h.01"/></svg></span>
-  <span><strong>Khelo</strong><span class="hub-description">Help recreational players find a game with room to join or organize one of their own.</span><small>Kotlin · Android Views · Material 3</small></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://adityaweb.xyz/projects.html#case-pyq-portal">
-  <span class="hub-icon blue"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg></span>
-  <span><strong>PYQ Portal</strong><span class="hub-description">Make previous-year exam papers easier for B.Tech students to locate.</span><small>Python · JavaScript · Pages</small></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a></div>
-      </section>
-    </div>
-    <div id="projects" data-hub-view hidden>
-      <h1 tabindex="-1">Projects</h1>
-      <div class="hub-group"><a class="hub-row" href="https://adityaweb.xyz/projects.html#case-Khelo">
-  <span class="hub-icon green"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h5m-2.5-2.5v5m7-3.5h.01m3 2h.01"/></svg></span>
-  <span><strong>Khelo</strong><span class="hub-description">Help recreational players find a game with room to join or organize one of their own.</span><small>Kotlin · Android Views · Material 3</small></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://adityaweb.xyz/projects.html#case-pyq-portal">
-  <span class="hub-icon blue"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg></span>
-  <span><strong>PYQ Portal</strong><span class="hub-description">Make previous-year exam papers easier for B.Tech students to locate.</span><small>Python · JavaScript · Pages</small></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-      <a class="hub-row" href="https://adityaweb.xyz/projects.html">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 6a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2H2zm0 4h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg></span>
-  <span><strong>All Projects</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a></div>
-    </div>
-    <div id="games" data-hub-view hidden>
-      <h1 tabindex="-1">Games</h1>
-    </div>
-    <div id="more" data-hub-view hidden>
-      <h1 tabindex="-1">More</h1>
-      <div class="hub-group"><a class="hub-row" href="?view=study">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 5c3-2 7-2 9 0v15c-2-2-6-2-9-1zm20 0c-3-2-7-2-9 0v15c2-2 6-2 9-1z"/></svg></span>
-  <span><strong>Study Material</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://adityaweb.xyz/">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 6a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2H2zm0 4h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg></span>
-  <span><strong>Developer Portfolio</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://github.com/Aditya-xcity">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 6a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2H2zm0 4h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg></span>
-  <span><strong>GitHub</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://www.linkedin.com/in/aditya-bhardwaj-9a9a7a341/">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 6a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2H2zm0 4h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg></span>
-  <span><strong>LinkedIn</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://drive.google.com/drive/folders/1pVTpTB8PLrDP3BXFfdnHnxM2oOzNWXt1">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 5c3-2 7-2 9 0v15c-2-2-6-2-9-1zm20 0c-3-2-7-2-9 0v15c2-2 6-2 9-1z"/></svg></span>
-  <span><strong>Introduction Page</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://github.com/Aditya-xcity/SwiftCode">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 5c3-2 7-2 9 0v15c-2-2-6-2-9-1zm20 0c-3-2-7-2-9 0v15c2-2 6-2 9-1z"/></svg></span>
-  <span><strong>Swift Lab Exercises</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://aditya-xcity.github.io/pyq-portal/website/syllabus.html">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 5c3-2 7-2 9 0v15c-2-2-6-2-9-1zm20 0c-3-2-7-2-9 0v15c2-2 6-2 9-1z"/></svg></span>
-  <span><strong>Syllabus</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://watchbutdonotlearn.github.io/">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h5m-2.5-2.5v5m7-3.5h.01m3 2h.01"/></svg></span>
-  <span><strong>Fun?</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a>
-<a class="hub-row" href="https://www.youtube.com/watch?v=QDia3e12czc">
-  <span class="hub-icon pale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zm0 0v7h7M8 13h8m-8 4h8"/></svg></span>
-  <span><strong>Claim Free Domain</strong></span>
-  <span class="hub-chevron"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span>
-</a></div>
-    </div>
-  </main>
-  <nav class="hub-tabs" aria-label="Portfolio navigation">
-    <a href="#home" aria-current="page"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 2 2.5 10v10a2 2 0 0 0 2 2h4.8v-7h5.4v7h4.8a2 2 0 0 0 2-2V10z"/></svg>Home</a>
-    <a href="#projects"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M2 6a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2H2zm0 4h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg>Projects</a>
-    <a href="#games"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h5m-2.5-2.5v5m7-3.5h.01m3 2h.01"/></svg>Games</a>
-    <a href="#more"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><g fill="currentColor" stroke="none"><circle cx="4" cy="12" r="2.4"/><circle cx="12" cy="12" r="2.4"/><circle cx="20" cy="12" r="2.4"/></g></svg>More</a>
-  </nav>
-</div>
-<div id="study-library">
 
   <!-- =========================================================
        NAVBAR
@@ -1143,31 +964,6 @@ body {
 
   </script>
 
-</div>
-<script>
-  if (!document.documentElement.classList.contains('study-mode')) {
-    const views = [...document.querySelectorAll('[data-hub-view]')];
-    const tabs = [...document.querySelectorAll('.hub-tabs a')];
-
-    function showView(focusHeading) {
-      const view = views.find(panel => '#' + panel.id === location.hash) || views[0];
-      for (const panel of views) panel.hidden = panel !== view;
-      for (const tab of tabs) {
-        if (tab.hash === '#' + view.id) tab.setAttribute('aria-current', 'page');
-        else tab.removeAttribute('aria-current');
-      }
-      const heading = view.querySelector('h1');
-      document.title = heading.textContent + ' · Aditya Bhardwaj';
-      if (focusHeading) {
-        window.scrollTo(0, 0);
-        heading.focus({ preventScroll: true });
-      }
-    }
-
-    showView(false);
-    window.addEventListener('hashchange', () => showView(true));
-  }
-</script>
 </body>
 
 </html>
